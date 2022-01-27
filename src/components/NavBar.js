@@ -1,4 +1,8 @@
 import '../components/NavBar.css'
+import '../components/ItemListContainer'
+import CartWidget from "./CartWidget"
+
+
 
 const NavBar = () => {
 return (
@@ -8,8 +12,12 @@ return (
             <li>Listado 2</li>
             <li>Listado 3 </li>
             <li>Listado 4 </li>
+            <CartWidget/>
         </ul>
     </nav>
-)
+
+) 
 }
+
 export default NavBar;
+
