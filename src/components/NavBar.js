@@ -1,5 +1,4 @@
 import '../components/NavBar.css'
-import '../components/ItemListContainer'
 import CartWidget from "./CartWidget"
 
 
