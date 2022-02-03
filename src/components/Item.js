@@ -19,7 +19,10 @@ const Item = ({info}) => {
     <Card.Text>
       {info.description}
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Card.Text>
+    {info.price}
+    </Card.Text>
+    <Button variant="primary"> Mas informacion </Button>
   </Card.Body>
 </Card>
 ;

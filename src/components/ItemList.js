@@ -11,23 +11,27 @@ export const ItemList = () => {
 const listaItems = [
     {
         id:"item1",
-        name:"info 1",
-        description:"Test 1 Test 1",
+        name:"Primer Objeto",
+        description:"info del objeto 1",
+        price: " $1 "
     },
     {
         id:"item2",
-        name:"info 2",
-        description:"Test 2 Test 2",
+        name:"Segundo Objeto",
+        description:"info del objeto 2",
+        price: " $2 "
     },
     {
         id:"item3",
-        name:"info 3",
-        description:"Test 3 Test 3",
+        name:"Tercer Objeto",
+        description:"info del objeto 3",
+        price: " $3 "
     },
     {
         id:"item4",
-        name:"info 4",
-        description:"Test 4 Test 4",
+        name:"Cuarto Objeto",
+        description:"info del objeto 4",
+        price: " $4 "
     }
 ]
 
