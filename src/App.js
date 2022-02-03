@@ -1,25 +1,49 @@
 import "./App.css";
 import "./styles.css";
 
-import ItemListContainer from "../src/components/ItemListContainer.js";
+import CardComponent from './components/CardComponent.js';
 import NavBar from "./components/NavBar.js";
 import ItemCount from "./components/ItemCount.js"
+import React, { Component } from "react";
+import { ItemList } from "./components/ItemList";
 
 const name = "test";
 
-const App = () => {
-  return (
-    <>
-    <NavBar>
-      <h1>Helo user: {name}</h1>
-    </NavBar>
-    <ItemListContainer>
-    </ItemListContainer>
-<div>
-  <ItemCount>
-  </ItemCount>
-</div>
-    </>
-  )
+class App extends Component {
+  render () {
+    return (
+      <>
+      <NavBar/>
+      <ItemList/>
+      </>
+    )
+  }
 }
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // const App = () => {
+  //   return (
+  //     <div>
+  //     </NavBar>
+  //     </ItemList>
+  
+  // </div>
+  
+  //   )
+  // }
