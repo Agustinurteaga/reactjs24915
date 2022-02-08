@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.js";
 import ItemCount from "./components/ItemCount.js"
 import React, { Component } from "react";
 import { ItemList } from "./components/ItemList";
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 const name = "test";
 
@@ -14,7 +15,9 @@ class App extends Component {
     return (
       <>
       <NavBar/>
-      <ItemList/>
+      <ItemDetailContainer/>
+
+      
       </>
     )
   }

@@ -4,10 +4,13 @@
 // en dos segundos para la consigna del tp 5
 
 import React from 'react';
-import Item from './Item'
+import Item from './Item';
+
+
 
 
 export const ItemList = () => {
+
 const listaItems = [
     {
         id:"item1",
@@ -15,18 +18,21 @@ const listaItems = [
         description:"info del objeto 1",
         price: " $1 "
     },
+
     {
         id:"item2",
         name:"Segundo Objeto",
         description:"info del objeto 2",
         price: " $2 "
     },
+
     {
         id:"item3",
         name:"Tercer Objeto",
         description:"info del objeto 3",
         price: " $3 "
     },
+
     {
         id:"item4",
         name:"Cuarto Objeto",
@@ -41,6 +47,25 @@ const listaItems = [
             return (<div> <Item info = {item}/> </div>) ;
             }) 
             } </div>
+
+
     );
 };
 
+
+
+// const [temporizador, setTemporizador] = useState([])
+// const [conter, setCounter] = userState(0)
+// useEffect(() => {
+//     const promiseTest = new Promise ((resolve,reject)=>{
+//         setTimeout(() => {
+//             resolve (espacio para meter uan api)
+//         }, 2000);
+//     })
+//     promiseTest
+//     .then((res)=> {setTemporizador(res)
+//     })
+//     .catch((error)=>{
+//     console.log(error)
+//     })
+// },[]);
