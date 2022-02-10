@@ -1,12 +1,18 @@
 .Navigation {
     display: flex;
-    background-color: grey;
-    color: white;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
     justify-content: space-around;
     align-items: center;
     min-height: 50px;
-    color: rgb(99, 194, 99);
 }
+
+.Link {
+	color: rgb(255, 58, 68);
+	list-style: none;
+	font-size: 20px;
+}
+
 
 ul{
     display:flex;

@@ -3,8 +3,6 @@
 
 
 import React from 'react';
-import App from '../App';
-import { ItemList } from './ItemList';
 import { Card, Button} from 'react-bootstrap'
 
 

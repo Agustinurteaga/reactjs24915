@@ -4,7 +4,7 @@
 // en dos segundos para la consigna del tp 5
 
 import React from 'react';
-import Item from './Item';
+import Item from '../items/Item';
 
 
 

@@ -1,26 +1,32 @@
 import "./App.css";
 import "./styles.css";
-
-import CardComponent from './components/CardComponent.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// componentes
 import NavBar from "./components/NavBar.js";
-import ItemCount from "./components/ItemCount.js"
-import React, { Component } from "react";
-import { ItemList } from "./components/ItemList";
-import ItemDetailContainer from './components/ItemDetailContainer'
+// windows
+import Home from './components/windows/Home';
+import Informacion from './components/windows/Informacion';
+import Contacto from './components/windows/Contacto';
+import ItemDetail from './components/items/ItemDetail';
 
-const name = "test";
 
-class App extends Component {
-  render () {
+
+
+const App = () => {
     return (
-      <>
-      <NavBar/>
-      <ItemDetailContainer/>
+      <Router>
+      <div className="App">
+        <NavBar/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+				  <Route path='/Informacion' element={<Informacion />} />
+				  <Route path='/Contacto' element={<Contacto />} />
+          <Route path='/detail/:id' element={<ItemDetail />} />
 
-      
-      </>
+        </Routes>
+      </div>
+      </Router>
     )
-  }
 }
 export default App;
 
