@@ -9,10 +9,11 @@ import Spinner from '../spinner/Spinner';
 const ItemFix = () => {
 	const [characters, setCharacters] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
+//https://fedeperin-harry-potter-api.herokuapp.com/personajes
 
 	useEffect(() => {
-		axios('https://fedeperin-harry-potter-api.herokuapp.com/db').then((res) =>
-			setCharacters(res.data.personajes)
+		axios('https://fedeperin-harry-potter-api.herokuapp.com/personajes').then((res) =>
+			setCharacters(res.data)
 		);
 		setTimeout(() => {
 			setIsLoading(false);
@@ -25,11 +26,11 @@ const ItemFix = () => {
 				<Spinner />
 			) : (
 				<div className='ItemFix-container'>
-					{characters.map((personajes) => {
+					{characters.map((currentcharacter) => {
 						return (
-							<div key={personajes.id}>
-								<Link to={`/detail/${personajes.id}`} className='Link'>
-									<Cards data={personajes} />
+							<div key={currentcharacter.id}>
+								<Link to={`/detail/${currentcharacter.id}`} className='Link'>
+									<Cards data={currentcharacter} />
 								</Link>
 							</div>
 						);

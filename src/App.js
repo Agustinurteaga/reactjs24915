@@ -22,7 +22,6 @@ const App = () => {
 				  <Route path='/Informacion' element={<Informacion />} />
 				  <Route path='/Contacto' element={<Contacto />} />
           <Route path='/detail/:id' element={<ItemDetail />} />
-
         </Routes>
       </div>
       </Router>
