@@ -26,6 +26,9 @@ export default function Cards({ data }) {
 				<Typography variant='body2' color='text.secondary'>
 					Actor: {data.interpretado_por}
 				</Typography>
+				<Typography variant='body2' color='text.secondary'>
+					2;
+				</Typography>
 			</CardContent>
 		</Card>
 	);

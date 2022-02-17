@@ -36,10 +36,15 @@ class ItemCount extends React.Component {
             <h1>{this.state.counter}</h1>
             <button type="submit" onClick={this.counterPlus}> + </button>
             <button type="submit" onClick={this.counterMinus}> - </button>
+            <div>
+            
+            <button> <h5> Finalizar compra</h5></button>
+            </div>
         </form>
         )
     }
     }
+    
 export default ItemCount;
 
 
