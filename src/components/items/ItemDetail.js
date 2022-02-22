@@ -10,7 +10,10 @@ import ItemCount from '../old/ItemCount';
 const ItemDetail = () => {
 	const [character, setCharacter] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
-	const [itemQuantity, setitemQuantity] = useState(null);
+	const [ setitemQuantity] = useState(null);
+
+//Saque itemQuantity,
+
 
 	let id = useParams();
 	let userID = id.id;
